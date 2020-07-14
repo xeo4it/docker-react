@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t jimmy/docker.react -f Dockerfile.dev .
+  - docker build -t xeo4it/docker.react -f Dockerfile.dev .
 
 script:
-  - docker run jimmy/docker-react npm run test -- --coverage
+  - docker run xeo4it/docker-react npm run test -- --coverage
